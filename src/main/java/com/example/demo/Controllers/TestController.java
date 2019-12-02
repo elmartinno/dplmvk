@@ -22,6 +22,11 @@ public class TestController {
         return accountService.getTests();
     }
 
+    @GetMapping("/version")
+    private String version() {
+        return "v1";
+    }
+
     /*
     @PostMapping("newTest")
     private void sendNewTest(@RequestBody Account account) {
